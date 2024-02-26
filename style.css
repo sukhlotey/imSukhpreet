@@ -505,6 +505,15 @@ form .btn2 {
 @media screen and (max-width:480px) {
     body {
         overflow-x: hidden;
+        /* width: 100%; */
+        margin-right: 0;
+        padding: 0;
+     
+    }
+
+    .container{
+        /* margin: 0; */
+        padding: 10px;
     }
 
     #header {
@@ -538,6 +547,7 @@ form .btn2 {
 
     .about-col-2 > p {
         font-size: 14px;
+        overflow-wrap: break-word;
     }
 
     .work {
@@ -571,6 +581,7 @@ form .btn2 {
         font-size: 14px;
         padding: 15px 0;
     }
+  
 }
 
 #msg {
