@@ -211,8 +211,11 @@ p.tab-links {
     display: block;
 }
 
+.hack-btn{
+    color: #fff;
+}
 
-/* ---------------------------------------portfolio------------------------------ */
+/* ---------------------------------------Projects------------------------------ */
 
 #portfolio {
     padding: 50px 0;
@@ -220,7 +223,8 @@ p.tab-links {
 
 .work-list {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 15px;
     align-items: center;
     margin-top: 50px;
     flex-wrap: wrap;
@@ -541,7 +545,6 @@ form .btn2 {
     .social-icons.bg-icons a {
         font-size: 24px;
     }
-
     .about-col-1 img {
         width: 250px;
     }
