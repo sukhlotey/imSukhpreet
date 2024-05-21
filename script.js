@@ -23,5 +23,3 @@ if(close) {
     })
 };
 
-// script.js
-
