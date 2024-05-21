@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sukhpreet</title>
+    <title>Sukhpreet Singh</title>
     <link rel="shortcut icon" href="./Images/sukhpreetsinghKhalsa.jpg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  
 </head>
 <body>
     <div id="header">
@@ -15,11 +17,11 @@
 
         <div>
             <ul id="navbar">
-                <li><a href="#main">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="./Images/Resume-1.pdf" target="_blank">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="nav-link" href="#main">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#portfolio">Projects</a></li>
+                <li><a class="nav-link" href="./Images/Resume-1.pdf" target="_blank">Resume</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
                 <i class='bx bx-x' id="close"></i>
             </ul>
             <i class='bx bx-menu' id="bar"></i>
@@ -27,6 +29,10 @@
     </div>
 
     <div id="main">
+        <video autoplay muted loop id="bgVideo">
+            <source src="https://videos.pexels.com/video-files/4702442/4702442-hd_1920_1080_25fps.mp4" type="video/mp4">
+        
+        </video>
         <h1>Hello. I'm Sukhpreet</h1>
         <h1><span>A Web Developer</span></h1>
         <p>Welcome to my portfolio website! I'm a passionate and aspiring web developer with a strong desire to create innovative solutions and push the boundaries of technology.With a deep love for coding, I am constantly seeking opportunities to learn and grow in this ever-evolving field</p>
@@ -40,7 +46,7 @@
     </div>
 
     <div id="about">
-        <div class="container">
+        <div class="container" >
             <div class="row">
                 <div class="about-col-1">
                     <img src="./Images/sukhpreetsinghKhalsa.jpg" alt="profile">
@@ -81,22 +87,22 @@
                     
                     <div class="tab-contents" id="languages">
                         <ul>
-                            <li><span>English</span><br><i class='bx bxs-circle' style='color:#ababab' ></i>
-                                <i class='bx bxs-circle' style='color:#ababab' ></i>
-                                <i class='bx bxs-circle' style='color:#ababab' ></i>
-                                <i class='bx bxs-circle' style='color:#ababab' ></i>
-                                <i class='bx bxs-circle' style='color:#ffffff1b' ></i>
+                            <li><span>English</span><br><i class='bx bxs-circle' style='color:#000000a1' ></i>
+                                <i class='bx bxs-circle' style='color:#000000a1' ></i>
+                                <i class='bx bxs-circle' style='color:#000000a1' ></i>
+                                <i class='bx bxs-circle' style='color:#000000a1' ></i>
+                                <i class='bx bxs-circle' style='color:#423f3f1b' ></i>
                             </li>
-                            <li><span>Punjabi</span><br><i class='bx bxs-circle' style='color:#ababab' ></i>
-                                <i class='bx bxs-circle' style='color:#ababab' ></i>
-                                <i class='bx bxs-circle' style='color:#ababab' ></i>
-                                <i class='bx bxs-circle' style='color:#ababab' ></i>
-                                <i class='bx bxs-circle' style='color:#ababab' ></i></li>
-                            <li><span>Hindi</span><br><i class='bx bxs-circle' style='color:#ababab' ></i>
-                                <i class='bx bxs-circle' style='color:#ababab' ></i>
-                                <i class='bx bxs-circle' style='color:#ababab' ></i>
-                                <i class='bx bxs-circle' style='color:#ababab' ></i>
-                                <i class='bx bxs-circle' style='color:#ababab' ></i></li>
+                            <li><span>Punjabi</span><br><i class='bx bxs-circle' style='color:#000000a1' ></i>
+                                <i class='bx bxs-circle' style='color:#000000a1' ></i>
+                                <i class='bx bxs-circle' style='color:#000000a1' ></i>
+                                <i class='bx bxs-circle' style='color:#000000a1' ></i>
+                                <i class='bx bxs-circle' style='color:#000000a1' ></i></li>
+                            <li><span>Hindi</span><br><i class='bx bxs-circle' style='color:#000000a1' ></i>
+                                <i class='bx bxs-circle' style='color:#000000a1' ></i>
+                                <i class='bx bxs-circle' style='color:#000000a1' ></i>
+                                <i class='bx bxs-circle' style='color:#000000a1' ></i>
+                                <i class='bx bxs-circle' style='color:#000000a1' ></i></li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="achievements">
@@ -186,8 +192,8 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <a href="mailto:sukh.singhlotey@gmail.com"><i class='bx bxs-paper-plane'></i> sukh.singhlotey@gmail.com</a>
-                    <p><i class='bx bxs-phone-call' ></i> +91 76791-38519</p>
+                    <a href="mailto:sukh.singhlotey@gmail.com" ><i class='bx bxs-paper-plane'></i> <span class="email-color">sukh.singhlotey@gmail.com</span></a>
+                    <p><i class='bx bxs-phone-call' ></i> <span class="num-color">+91 76791-38519</span></p>
                     <div class="social-icons">
                         <a href="mailto:sukh.singhlotey@gmail.com" target="_blank"><i class='bx bxs-envelope'></i></a>
                         <a href="https://www.linkedin.com/in/sukhpreetlotey/" target="_blank"><i class='bx bxl-linkedin-square' ></i></i></a>
@@ -195,10 +201,12 @@
                         <a href="https://instagram.com/im.preet.0929" target="_blank"><i class='bx bxl-instagram-alt' ></i></i></a>
                         <a href="https://twitter.com/luvseverussnape" target="_blank"><i class='bx bxl-twitter' ></i></a>
                     </div>
+                    
                     <a href="./Images/Resume-1.pdf" target="_blank" class="btn btn2">Download CV</a>
                 </div>
              
             </div>
+           
         </div>
         <div class="copyright">
             <p>Copyright © 2024 by Sukhpreet Singh</p>
@@ -220,8 +228,25 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
+      
+   
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.nav-link');
+  links[0].classList.add('active');
+  links.forEach(link => {
+      link.addEventListener('click', function() {
+          links.forEach(node => node.classList.remove('active'));
+
+          this.classList.add('active');
+      });
+  });
+});
+
+
     </script>
 
     <script src="script.js"></script>
+
+
 </body>
 </html>

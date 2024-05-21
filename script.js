@@ -23,3 +23,5 @@ if(close) {
     })
 };
 
+// script.js
+
