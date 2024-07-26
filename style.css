@@ -191,7 +191,7 @@ html {
   cursor: pointer;
   position: relative;
 }
-.tab-titles p:nth-child(4) {
+.tab-titles p:nth-child(5) {
   margin-right: 0;
 }
 
